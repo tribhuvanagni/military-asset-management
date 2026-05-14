@@ -1,0 +1,174 @@
+.transfers-page {
+  padding: 28px 32px;
+}
+
+.transfers-page__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.transfers-page__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  color: #e8e8e8;
+  letter-spacing: 2px;
+  margin: 0 0 4px;
+}
+
+.transfers-page__subtitle {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  color: #5a7a8a;
+  margin: 0;
+}
+
+/* Transfer Form */
+.transfer-form {
+  background: #111c28;
+  border: 1px solid #1a2a3a;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  animation: slideDown 0.25s ease-out;
+}
+
+.transfer-form__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  color: #c8922a;
+  letter-spacing: 1px;
+  margin: 0 0 16px;
+}
+
+.transfer-form__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+/* Filters */
+.transfers-page__filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+/* Table */
+.transfers-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #1a2a3a;
+  border-radius: 8px;
+}
+
+.transfers-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+}
+
+.transfers-table th {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 600;
+  color: #5a7a8a;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  background: #0d1520;
+  border-bottom: 1px solid #1a2a3a;
+  white-space: nowrap;
+}
+
+.transfers-table td {
+  padding: 10px 14px;
+  color: #b0b8c0;
+  border-bottom: 1px solid #141e28;
+}
+
+.transfers-table tbody tr:nth-child(even) {
+  background: #0e1822;
+}
+
+.transfers-table tbody tr:hover {
+  background: #162535;
+}
+
+/* Status Badges */
+.status-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge--pending {
+  background: #2a2412;
+  color: #c8922a;
+}
+
+.status-badge--approved {
+  background: #122a1b;
+  color: #4ecb71;
+}
+
+.status-badge--rejected {
+  background: #2a1215;
+  color: #e74c3c;
+}
+
+/* Action Buttons */
+.td-actions {
+  display: flex;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.btn-approve,
+.btn-reject {
+  padding: 5px 12px;
+  border: none;
+  border-radius: 4px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  letter-spacing: 0.3px;
+}
+
+.btn-approve {
+  background: #1a3a25;
+  color: #4ecb71;
+}
+
+.btn-approve:hover:not(:disabled) {
+  background: #1f4a2e;
+}
+
+.btn-reject {
+  background: #3a1a1e;
+  color: #e74c3c;
+}
+
+.btn-reject:hover:not(:disabled) {
+  background: #4a1e24;
+}
+
+.btn-approve:disabled,
+.btn-reject:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.td-resolved {
+  font-size: 11px;
+  color: #4a6a7a;
+  font-style: italic;
+}
