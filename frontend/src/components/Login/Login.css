@@ -1,0 +1,164 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a1018;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(200, 146, 42, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(13, 27, 42, 0.8) 0%, transparent 60%);
+}
+
+.login-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  z-index: 1;
+}
+
+.login-brand {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.login-logo {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, #c8922a, #a07520);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  color: #0d1b2a;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.login-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  color: #e8e8e8;
+  letter-spacing: 4px;
+  margin: 0 0 4px;
+}
+
+.login-tagline {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  color: #5a7a8a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.login-form {
+  background: #111c28;
+  border: 1px solid #1a2a3a;
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.login-field {
+  margin-bottom: 18px;
+}
+
+.login-label {
+  display: block;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #6a8a9a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 11px 14px;
+  background: #0a141e;
+  border: 1px solid #1a2a3a;
+  border-radius: 6px;
+  color: #d0d8e0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.login-input:focus {
+  border-color: #c8922a;
+}
+
+.login-input::placeholder {
+  color: #3a4a5a;
+}
+
+.login-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #1e1215;
+  border: 1px solid #3a1a20;
+  border-radius: 6px;
+  color: #e8a0a0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.login-error__icon {
+  color: #e74c3c;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.login-submit {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #c8922a, #a07520);
+  border: none;
+  border-radius: 6px;
+  color: #0d1b2a;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.login-submit:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.login-submit:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.login-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.login-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  color: #3a4a5a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
