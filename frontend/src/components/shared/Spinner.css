@@ -1,0 +1,44 @@
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+  gap: 16px;
+}
+
+.spinner-ring {
+  border: 3px solid #2a3a4a;
+  border-top-color: #c8922a;
+  border-radius: 50%;
+  animation: spinnerRotate 0.8s linear infinite;
+}
+
+.spinner-container--small .spinner-ring {
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+}
+
+.spinner-container--medium .spinner-ring {
+  width: 36px;
+  height: 36px;
+}
+
+.spinner-container--large .spinner-ring {
+  width: 52px;
+  height: 52px;
+  border-width: 4px;
+}
+
+.spinner-label {
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  color: #7a8a9a;
+  letter-spacing: 0.5px;
+}
+
+@keyframes spinnerRotate {
+  to { transform: rotate(360deg); }
+}

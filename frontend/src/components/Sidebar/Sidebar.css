@@ -1,0 +1,195 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 240px;
+  background: #0d1b2a;
+  border-right: 1px solid #1a2a3a;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.sidebar__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 20px 20px;
+  border-bottom: 1px solid #1a2a3a;
+}
+
+.sidebar__logo {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, #c8922a, #a07520);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  color: #0d1b2a;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.sidebar__brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  color: #e8e8e8;
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.sidebar__subtitle {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  color: #5a7a8a;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 2px;
+}
+
+.sidebar__nav {
+  flex: 1;
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar__link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #7a8a9a;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar__link:hover {
+  background: #162535;
+  color: #b8c8d8;
+}
+
+.sidebar__link--active {
+  background: #1a2d40;
+  color: #c8922a;
+}
+
+.sidebar__link--active .sidebar__link-icon {
+  color: #c8922a;
+}
+
+.sidebar__link-icon {
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+  color: #4a6a7a;
+}
+
+.sidebar__link-label {
+  letter-spacing: 0.3px;
+}
+
+.sidebar__footer {
+  padding: 16px;
+  border-top: 1px solid #1a2a3a;
+}
+
+.sidebar__user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar__user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #2a3a4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 14px;
+  color: #c8922a;
+}
+
+.sidebar__user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__username {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 13px;
+  color: #c8d0d8;
+  font-weight: 600;
+}
+
+.sidebar__role-badge {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 10px;
+  color: #c8922a;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.sidebar__base-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 11px;
+  color: #5a8a6a;
+  padding: 6px 10px;
+  background: #0f2218;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.sidebar__base-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4a8a5a;
+  animation: basePulse 2s ease-in-out infinite;
+}
+
+.sidebar__logout {
+  width: 100%;
+  padding: 8px;
+  background: #1a1520;
+  border: 1px solid #2a2035;
+  border-radius: 4px;
+  color: #9a7a8a;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.sidebar__logout:hover {
+  background: #2a1520;
+  color: #e8a8b8;
+}
+
+@keyframes basePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
